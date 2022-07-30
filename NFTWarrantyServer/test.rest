@@ -1,0 +1,82 @@
+### ParentClient API-------------------------------------------------- 
+POST https://nft-warranty-system-server.herokuapp.com/api/add-parent-client
+Content-Type: application/json
+
+{
+    "walletAddress":"0xbEc53EBdf7833B9fdfd87472f2jggj87d578d2sdf3e87",
+    "contractAddress":"0xbEc53EBdf7833B9fdfd87472dfdff287d578d2sdf3e87"
+}
+//Done
+
+
+###
+GET https://nft-warranty-system-server.herokuapp.com/api/parent-clients/0xbEc53EBdf7833B9fdfd87472f2jggj87d578d2sdf3e87
+//Done
+
+### ChildClient API---------------------------------------------------
+POST https://nft-warranty-system-server.herokuapp.com/api/add-child-client
+Content-Type: application/json
+
+{
+    "walletAddress":"0xbEc53EBdf7833B9fdfd87472f2jggj87d578d2sdf3e87",
+    "child":{
+            "id":"32ss342s5",
+            "contractAddress":"0xbEc53EBdf78x33B9d87475222sdd5781d265A3e87",
+            "walletAddress":"0xbEc53EBdf78x33B9d87475222sdd5781d265A3e"
+        }
+        
+}
+//Done
+
+### USER API-----------------------------------------------------------
+
+POST https://nft-warranty-system-server.herokuapp.com/api/add-user
+Content-Type: application/json
+
+{
+    "walletAddress":"0xbEc53EBdf7833B9fdfd87472f287d578d2sdf3e87"
+}
+// Done
+
+### 
+POST https://nft-warranty-system-server.herokuapp.com/api/login
+Content-Type: application/json
+
+{
+    "walletAddress":"0xbEc53EBdf7833B9fdfd87472f287d578d2sdf3e87"
+}
+
+
+### 
+POST http://localhost:3001/api/add-token
+Content-Type: application/json
+
+{
+    
+    "id":"token_id_00762",
+    "URI":"URI_001",
+    "walletAddress":"0x38009e3f71B52569B064d225f984247c378FCE96",
+    "contractAddress":"0x61Contract3",
+    "APIToken":"-N86kgVXEOkezQmkXg-B"
+    
+}
+//Done  
+
+### 
+POST http://localhost:3001/api/transfer-ownership
+Content-Type: application/json
+
+{
+    
+    "URI":"URI",
+      "id":"tokenId",
+      "contractAddress":"contractAddress",
+      "receiverWalletAddress":"0x61A4F3B0c34f6ABaD9D1787baDB86A636E1BB0D7",
+      "clientWalletAddress":"0x61A4F3B0c34f6ABaD9D1787baDB86A636E1BB0D7",
+      "senderWalletAddress":"0x38009e3f71B52569B064d225f984247c378FCE96"
+    
+}
+
+###
+
+

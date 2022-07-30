@@ -1,0 +1,11 @@
+@import "../../utils/commons.scss";
+
+.container{
+@extend .flexRow;
+padding:4rem;
+justify-content: flex-start;
+flex-wrap: wrap;
+>div{
+    margin:1rem;
+}
+}
